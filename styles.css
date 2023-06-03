@@ -1,3 +1,10 @@
+/* Creates a background image for all pages */
+body {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Styling for navigation links */
 nav a {
   text-decoration: none;
@@ -7,12 +14,12 @@ nav a {
   color: green;
 }
 
-/* Styling for active link */
+/* Styling for when mouse hovers over link */
 nav a.active {
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
-/* Styling for navigation and unordered lists */
+/* Styling for navigation and unordered lists (links) */
 nav ul,
 ul {
   margin: 0;
@@ -26,17 +33,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
   padding: 10px;
 }
 
-/* Styling for list items */
+/* Styling for links */
 li {
   margin-left: 20px;
 }
 
 /* Styling for the profile picture */
-#profile-pic {
+.profile-pic {
   width: 140px;
   height: auto;
   max-width: 100%;
@@ -48,14 +54,14 @@ nav a:hover {
   color: blue;
 }
 
-/* Styling for the main section */
-main {
+/* Styling for the main section of home page */
+.intro_to_portfolio {
   padding: 50px;
   text-align: center;
 }
 
 /* Styling for the welcome message */
-h1 {
+#welcome_message {
   font-size: 36px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -63,9 +69,9 @@ h1 {
 }
 
 /* Styling for the introductory paragraph */
-p {
+#intro {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  line-height: 1.5;
+  line-height: 2;
 }
